@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C72C233-F20F-4C77-844D-064616D1BE24}</ProjectGuid>
+    <RootNamespace>TP2_PROG2016</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\Cliente.cpp" />
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\Data.cpp" />
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\main.cpp" />
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\Menus.cpp" />
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\Produto.cpp" />
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\Transacao.cpp" />
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\utils.cpp" />
+    <ClCompile Include="..\..\..\..\filesT2\codigoParcial\Vende++.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\Cliente.h" />
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\Data.h" />
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\defs.h" />
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\Menus.h" />
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\Produto.h" />
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\Transacao.h" />
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\utils.h" />
+    <ClInclude Include="..\..\..\..\filesT2\codigoParcial\Vende++.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Debug\clientes.txt" />
+    <Text Include="..\Debug\produtos.txt" />
+    <Text Include="..\Debug\transacoes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\filesT2\codigoParcial\.lixo" />
+    <None Include="..\..\..\..\filesT2\codigoParcial\LEIA-ME" />
+    <None Include="..\..\..\..\filesT2\codigoParcial\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿Build started 23-05-2016 11:01:21.
+     1>Project "D:\Dropbox\Dropbox\Samba\2ºSemester 2015\2ºSemester 2015\PROG\workspace\2016\TP2_PROG2016\TP2_PROG2016\TP2_PROG2016.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\filesT2\codigoParcial\Cliente.cpp ..\..\..\..\filesT2\codigoParcial\Data.cpp ..\..\..\..\filesT2\codigoParcial\main.cpp ..\..\..\..\filesT2\codigoParcial\Menus.cpp ..\..\..\..\filesT2\codigoParcial\Produto.cpp ..\..\..\..\filesT2\codigoParcial\Transacao.cpp ..\..\..\..\filesT2\codigoParcial\utils.cpp ..\..\..\..\filesT2\codigoParcial\Vende++.cpp
+         Vende++.cpp
+         utils.cpp
+         Transacao.cpp
+         Produto.cpp
+         Menus.cpp
+         main.cpp
+         Data.cpp
+         Cliente.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dropbox\Dropbox\Samba\2ºSemester 2015\2ºSemester 2015\PROG\workspace\2016\TP2_PROG2016\Debug\TP2_PROG2016.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Dropbox\Dropbox\Samba\2ºSemester 2015\2ºSemester 2015\PROG\workspace\2016\TP2_PROG2016\Debug\TP2_PROG2016.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dropbox\Dropbox\Samba\2ºSemester 2015\2ºSemester 2015\PROG\workspace\2016\TP2_PROG2016\Debug\TP2_PROG2016.lib" /MACHINE:X86 Debug\Cliente.obj
+         Debug\Data.obj
+         Debug\main.obj
+         Debug\Menus.obj
+         Debug\Produto.obj
+         Debug\Transacao.obj
+         Debug\utils.obj
+         Debug\Vende++.obj
+         TP2_PROG2016.vcxproj -> D:\Dropbox\Dropbox\Samba\2ºSemester 2015\2ºSemester 2015\PROG\workspace\2016\TP2_PROG2016\Debug\TP2_PROG2016.exe
+     1>Done Building Project "D:\Dropbox\Dropbox\Samba\2ºSemester 2015\2ºSemester 2015\PROG\workspace\2016\TP2_PROG2016\TP2_PROG2016\TP2_PROG2016.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.60
