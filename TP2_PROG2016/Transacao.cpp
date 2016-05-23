@@ -14,7 +14,7 @@ Transacao::Transacao(ifstream & in){ // le uma transacao na forma de  idcliente 
 	vector<string> produtos_aux;
 	string prod_individual;
 
-
+	
 	//idcliente
 	in >> idCliente; in.ignore(); // ignora o ;
 
@@ -26,10 +26,10 @@ Transacao::Transacao(ifstream & in){ // le uma transacao na forma de  idcliente 
 	data_aux.erase(data_aux.begin()); data_aux.erase(data_aux.end() - 1);               //apaga 1 e último espaço
 	//cout << 33 << endl;
 	Data data(data_aux);
-
+	
 	//lista de produtos
 	getline(in, lista_prod_aux);
-
+	
 	istringstream instr(lista_prod_aux);
 	while (getline(instr, prod_individual, ','))
 	{
@@ -37,7 +37,7 @@ Transacao::Transacao(ifstream & in){ // le uma transacao na forma de  idcliente 
 		produtos_aux.push_back(prod_individual);
 	}
 	produtos = produtos_aux;
-
+	
 
 }
 
@@ -48,11 +48,11 @@ void Transacao::save(ofstream & out) const{ // transacao guardada como na forma 
 	out << " ; ";
 
 	int ult = produtos.size();
-	for (int i = 0; i < produtos.size(); i++)
+	for (unsigned int i=0; i < produtos.size(); i++)
 	{
 		out << produtos[i];
-
-		if (ult != produtos[i].size() - 1)             // so poe a vírgula se nao for o ultimo
+		
+		if ( ult!= produtos[i].size() - 1)             // so poe a vírgula se nao for o ultimo
 			out << ", ";
 	}
 
@@ -84,7 +84,7 @@ vector<Transacao> le_fichTransacoes(string fichTransacoes){
 		Transacao trans(f_transacoes);
 		v_transacoes.push_back(trans);
 		num_transacoes--;
-
+		
 	}
 	f_transacoes.close();
 

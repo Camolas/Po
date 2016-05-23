@@ -33,13 +33,13 @@ void clearScreen(){
 
 unsigned short int leUnsignedShortInt(unsigned short int min, unsigned short int  max){
 
-	// A IMPLEMENTAR
+  // A IMPLEMENTAR
 	return 0;
 }
 
 
 int leInteiro(int min, int max){
 
-	// A IMPLEMENTAR
+  // A IMPLEMENTAR
 	return 0;
 }

@@ -14,15 +14,15 @@ Data::Data(string dataStr){ // data na forma DD/MM/AAA
 }
 
 int Data::getDia() const{
-	return dia;
+  return dia;
 }
 
 int Data::getMes() const{
-	return mes;
+  return mes;
 }
 
 int Data::getAno() const{
-	return ano;
+  return ano;
 }
 
 void Data::setDia(int dia){
@@ -40,7 +40,6 @@ void Data::setAno(int ano){
 
 void Data::save(ofstream & out) const{
 	out << dia << '/' << mes << '/' << ano;
-
 }
 
 ostream& operator<<(ostream& out, const Data & data){
